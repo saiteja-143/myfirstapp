@@ -1,38 +1,48 @@
-.App {
-  text-align: center;
+/* Styling for movie list */
+.Movie_poster {
+  object-fit: cover;
+  height: 500px;
+  width: 340px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Movie_specs {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+}
+.Movie_container {
+  width: 340px;
+}
+body {
+  margin: 24px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 15x;
 }
 
-.App-link {
-  color: #61dafb;
+.Movie_Summary {
+  color: #222222;
 }
+.Rating {
+  font-size: 18px;
+  font-weight: 400;
+}
+.Movie_name {
+  margin: 8px 0px;
+}
+.App {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: flex-end;
+}
+/* 
+Styling for movie list ends herer */
+/* 
+Styling for like and dislike */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container {
+  display: flex;
+  gap: 10px;
+}
+.likes-dislikes {
+  font-size: 20px;
 }
